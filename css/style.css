@@ -1,0 +1,19 @@
+.navbar-nav a{
+  font-size: 1.5rem;
+  font-weight: 500;
+  z-index:1;
+  color:white;
+}
+.navbar-brand{
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-shadow: grey 3px 3px 6px;
+  color:white;
+}
+.sticky-top{
+  z-index: 1;
+}
+/*-carousel*/
+.carousel-item img{
+  height: 90vh;
+}
