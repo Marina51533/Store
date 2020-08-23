@@ -10,7 +10,24 @@
  
 </head>
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark"">
+  <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <div class="modal-title">Image</div>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive center-block" src="" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"">
     <a class="navbar-brand ml-lg-4" href="#">Dixis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -51,7 +68,7 @@
         <img src="img/carousel1 (FILEminimizer).jpg" class="d-block w-100 active" alt="...">
       <div class='carousel_content carousel-caption1'>
         <h1>Discount</h1>
-        <p>MAKE-UP REVOLUTION</p>
+        <p p class='lead'>MAKE-UP REVOLUTION</p>
         <button type="button" class="btn  btn-outline-light">Look at this!</button>
       </div>
       </div>
@@ -59,7 +76,7 @@
         <img src="img/carousel2 (FILEminimizer).jpg" class="d-block w-100" alt="...">
         <div class='carousel_content carousel-caption2'>
           <h1>Discount</h1>
-          <p>MAKE-UP REVOLUTION</p>
+          <p class='lead'>MAKE-UP REVOLUTION</p>
           <button type="button" class="btn  btn-outline-light">Look at this!</button>
         </div>
       </div>
@@ -67,7 +84,7 @@
         <img src="img/carousel3 (FILEminimizer).jpg" class="d-block w-100" alt="...">
         <div class='carousel_content carousel-caption1'>
           <h1>Discount</h1>
-          <p>MAKE-UP REVOLUTION</p>
+          <p p class='lead'>MAKE-UP REVOLUTION</p>
           <button type="button" class="btn  btn-outline-light">Look at this!</button>
         </div>
       </div>
@@ -81,6 +98,30 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+
+  
+  <div class="container first_section">
+    <div class="row">
+      <div class="col left_col">
+        <h2 class='text-center'>Dear guests,</h2>
+        <h3 class='text-center'>Welcome to our salon!</h3>
+        <p class='pt-10'> We invite you to the world of beauty and health,where you will have great possibility to relax.</p>
+        <p>Every day we are passionately improving our skills to provide our clients with the highest level of service.</p>
+        <p>The experienced masters of our center will be happy to advise you and help you preserve your youth as long as possible. For this we have a wide range of services.</p>
+      </div>
+      <div class="col right_col">
+        <div class='right_part_center'></div>
+        <div class='right_part_second_center'><img src='img/hotpng.com.png'></div>
+        <div class="col-sm-1 col-md-1 col-lg-1"> 
+          <a href="#" class="thumbnail">
+             <img src="img/beauty_salon (FILEminimizer).jpg" alt="...">
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
  
 
 
@@ -89,6 +130,27 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src='js/main.js '></script>
+  <script>
+    // После загрузки DOM-дерева (страницы)
+    $(function() {     
+      //при нажатии на ссылку, содержащую Thumbnail
+      $('a.thumbnail').click(function(e) {
+        //отменить стандартное действие браузера
+        e.preventDefault();
+        //присвоить атрибуту scr элемента img модального окна
+        //значение атрибута scr изображения, которое обёрнуто
+        //вокруг элемента a, на который нажал пользователь
+        $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
+        //открыть модальное окно
+        $("#image-modal").modal('show');
+      });
+      //при нажатию на изображение внутри модального окна 
+      //закрыть его (модальное окно)
+      $('#image-modal .modal-body img').on('click', function() {
+        $("#image-modal").modal('hide')
+      });
+    });
+    </script>
 </body>
 
 </html>
