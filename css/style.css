@@ -17,3 +17,30 @@
 .carousel-item img{
   height: 90vh;
 }
+
+.carousel-caption1 {
+  position: absolute;
+  right: 15%;
+  bottom: 40vh;
+  left: 50%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.carousel-caption2 {
+  position: absolute;
+  right: 15%;
+  bottom: 40vh;
+  left: -20%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.revolution{
+  padding: 8px;
+  border:2px solid white;
+}
