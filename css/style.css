@@ -56,8 +56,7 @@
 /*--first_section*/
 .first_section{
  height: 100vh;
- margin-right: 0; 
- margin-left: 0;
+ padding: 0;
  
 }
 .left_col{
@@ -119,3 +118,25 @@ right: 0;
     width: 100vw;
   }
 }
+/*-second block-*/
+
+.second_block{
+padding: 0;
+}
+.all_values{
+  height: 70vh;
+  margin: 0;
+  padding:5vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.second_block_left{
+background-image: url(../img/nails.jpg);
+}
+.second_block_right{
+background-image: url(../img/haircut.jpg);
+
+}
+
+
