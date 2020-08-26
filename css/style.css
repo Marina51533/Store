@@ -163,11 +163,22 @@ font-weight: 500;
 top:65%;
 }
 .second_block_left{
-background-image: url(../img/nails.jpg);
+background-image: url(../img/nails\ \(FILEminimizer\).jpg);
 }
 .second_block_right{
-background-image: url(../img/haircut.jpg);
+background-image: url(../img/haircut\ \(FILEminimizer\).jpg);
 
 }
-
+.second_block_left_s{
+  background: url(../img/makeup\ \(FILEminimizer\).jpg);
+}
+.second_block_right_s{
+  background-image: url(../img/sugaring\ \(FILEminimizer\).jpg);
+}
+.second_block_left_t{
+  background: url(../img/eyebrown\ \(FILEminimizer\).jpg);
+}
+.second_block_right_t{
+  background-image: url(../img/solarij\ \(FILEminimizer\).jpg);
+}
 
