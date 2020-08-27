@@ -235,3 +235,11 @@ background-image: url(../img/haircut\ \(FILEminimizer\).jpg);
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:1024px) {
+  .right_col{
+    display:none;
+  }
+  .right_col{
+    width: 100vw;
+  }
+}
