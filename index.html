@@ -27,7 +27,7 @@
     </div>
   </div>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"">
+  <nav  id='opac' class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand ml-lg-4" href="#">Dixis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -163,17 +163,35 @@
       </div>
     </div>
   </div>
-  <div class='container'>
-    <h2>Our brends</h2>
+
+  <div class='container last'>
+    <h2>Our brands</h2>
     <div class='line'></div>
-    <div class='brends'>
-      <img src='' alt='...'>
-      <img src='' alt='...'>
-      <img src='' alt='...'>
-      <img src='' alt='...'>
+    <div class='brands'>
+      <img src='img/wella.jpg' alt='...'>
+      <img src='img/schwarzkopf.jpg' alt='...'>
+      <img src='img/loreal.png' alt='...'>
+      <img src='img/schwarzkopf.jpg' alt='...'>
+      <img src='img/loreal.png' alt='...'>
     </div>
   </div>
  
+  <div class='container contacts'>
+    <row class='contacts_structure'>
+      <div class='col-6'>
+        <div class='map'><img src='img/map.png'></div>
+      </div>
+      <div class='col'>
+        <div class='contacts_text'>
+          <h4>Address</h4>
+          <p> Prague, Trnkovo namesti,1112/1</p>
+          <h3>Work time</h3>
+          <p>Mo. - Sam.  9.00 - 19.00</p>
+          <p>Sunday   11.00 - 18.00</p>
+        </div>
+      </div>
+    </row>
+  </div>
 
 
 
@@ -199,6 +217,9 @@
       //закрыть его (модальное окно)
       $('#image-modal .modal-body img').on('click', function() {
         $("#image-modal").modal('hide')
+      });
+      document.addEventListener("scroll", function() {
+        document.getElementById("opac").style.opacity = (60 - pageYOffset) / 60;
       });
     });
    
