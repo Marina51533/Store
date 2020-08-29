@@ -129,7 +129,9 @@ right: 0;
   }
 }
 /*-second block-*/
-
+.row{
+  margin-left: 0px;
+}
 .second_block{
 padding: 0;
 }
@@ -167,6 +169,7 @@ top:65%;
 }
 .second_block_left{
 background-image: url(../img/nails\ \(FILEminimizer\).jpg);
+
 }
 .second_block_right{
 background-image: url(../img/haircut\ \(FILEminimizer\).jpg);
