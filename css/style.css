@@ -86,10 +86,14 @@ padding: 0vw;
 color:white;
 margin:0;
 font-size: 1.3rem;
-padding:2vh;
+padding:2vh 5vh 5vh 2vh;
 }
 .pt-10{
-  padding-top: 25px;
+  padding-top: 1vh;
+  font-size: 20px;
+}
+.pt-10_top{
+  margin-top:3vh;
 }
 .right_col{
   position: relative;
@@ -309,5 +313,8 @@ background-image: url(../img/haircut\ \(FILEminimizer\).jpg);
 }
 .carousel-inner{
   display: none;
+}
+.pt-10{
+  font-size: 14px;
 }
 }
