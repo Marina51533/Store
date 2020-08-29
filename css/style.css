@@ -10,7 +10,9 @@ body{
   padding: 0;
   margin: 0;
 }
-
+.navbar{
+  width: 100vw;
+}
 .navbar-nav a{
   font-size: 1.5rem;
   font-weight: 500;
@@ -73,6 +75,7 @@ padding: 0vw;
 color:white;
 margin:0;
 font-size: 1.3rem;
+padding:2vh;
 }
 .pt-10{
   padding-top: 25px;
@@ -129,10 +132,10 @@ right: 0;
 
 .second_block{
 padding: 0;
-
 }
 .all_values{
 height: 70vh;
+width:100vw;
 margin: 0;
 padding:5vw;
 background-repeat: no-repeat;
@@ -194,10 +197,7 @@ background-image: url(../img/haircut\ \(FILEminimizer\).jpg);
   text-align: center;
   margin: 5vh 0 30vh 0;
 }
-.last img{
-  height: 100px;
-  width: 180px;
-}
+
 .line{
   height: 3px;
   width: 100vw;
@@ -207,12 +207,17 @@ background-image: url(../img/haircut\ \(FILEminimizer\).jpg);
   display: flex;
   justify-content: space-between;
 }
+.brands img{
+  height: 100px;
+  width: 180px;
+}
 /*--contacts--*/
 .contacts{
   background-color: rgb(26, 25, 25);
   height: 100vh;
   color:white;
 }
+
 .contacts_text{
   margin:20vh 0 0 10vw;
 }
@@ -234,6 +239,7 @@ background-image: url(../img/haircut\ \(FILEminimizer\).jpg);
 .contacts_structure{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media (max-width:1024px) {
   .right_col{
@@ -242,4 +248,45 @@ background-image: url(../img/haircut\ \(FILEminimizer\).jpg);
   .right_col{
     width: 100vw;
   }
+  .brands img{
+    height: 70px;
+    width: 80px;
+  }
+  .contacts_text h3{
+    font-size: 1.4rem;
+    margin-top: 5vh;
+  }
+  .contacts_text h4{
+    font-size: 1.5rem;
+  }
+  .contacts_text p{
+    font-size: 1.2rem;
+  }
+  .map img{
+    margin-top:10vh;
+    height: 200px;
+    width: 300px;
+  }
+}
+@media (max-width:650px) {
+.contacts_text h3{
+  font-size: 1.3rem;
+  margin-top: 5vh;
+}
+.contacts_text h4{
+  font-size: 1.2rem;
+}
+.contacts_text p{
+  font-size: 1rem;
+}
+.map img{
+  margin-top:10vh;
+  height: 200px;
+  width: 300px;
+}
+.contacts_structure{
+  
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 }
