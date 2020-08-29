@@ -314,7 +314,10 @@ background-image: url(../img/haircut\ \(FILEminimizer\).jpg);
 .carousel-inner{
   display: none;
 }
+.pt-10_top{
+  margin-top: 10vh;
+}
 .pt-10{
-  font-size: 14px;
+  font-size: 18px;
 }
 }

@@ -124,25 +124,11 @@
   
   <div class='container-fluid second_block' id='products'>
     <div class="row">
-      <div class="col-md second_block_left all_values">
+      <div class="col-md second_block_left all_values" id='one'>
         <h2>Akce</h2>
         <h3>only this week - 190Kč</h3>
         <p>Manicure </p></div>
-      <div class="col-md second_block_right all_values">
-        <h2>Akce</h2>
-        <h3>only this week - 190Kč</h3>
-        <p>Manicure </p></div>
-      </div>
-    </div>
-  </div>
-
-  <div class='container-fluid second_block'>
-    <div class="row">
-      <div class="col-md second_block_left_s all_values">
-        <h2>Akce</h2>
-        <h3>only this week - 190Kč</h3>
-        <p>Manicure </p></div>
-      <div class="col-md second_block_right_s all_values">
+      <div class="col-md second_block_right all_values" id='two'>
         <h2>Akce</h2>
         <h3>only this week - 190Kč</h3>
         <p>Manicure </p></div>
@@ -152,11 +138,25 @@
 
   <div class='container-fluid second_block'>
     <div class="row">
-      <div class="col-md second_block_left_t all_values">
+      <div class="col-md second_block_left_s all_values" id='three'>
         <h2>Akce</h2>
         <h3>only this week - 190Kč</h3>
         <p>Manicure </p></div>
-      <div class="col-md second_block_right_t all_values">
+      <div class="col-md second_block_right_s all_values" id='four'>
+        <h2>Akce</h2>
+        <h3>only this week - 190Kč</h3>
+        <p>Manicure </p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class='container-fluid second_block' id='three'>
+    <div class="row">
+      <div class="col-md second_block_left_t all_values" id='five'>
+        <h2>Akce</h2>
+        <h3>only this week - 190Kč</h3>
+        <p>Manicure </p></div>
+      <div class="col-md second_block_right_t all_values" id='six'>
         <h2>Akce</h2>
         <h3>only this week - 190Kč</h3>
         <p>Manicure </p></div>
@@ -219,7 +219,12 @@
         document.getElementById("opac").style.opacity = (60 - pageYOffset) / 60;
       });
     });
-   
+   document.getElementById('one').onclick=function(e){
+     if(e.target!=this){
+       return true;
+     }
+     //alert('Ok')
+   }
     </script>
 </body>
 
